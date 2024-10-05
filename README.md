@@ -15,7 +15,7 @@ Eventos is an event ticketing platform built on the blockchain that allows you t
 - Payment Integration: For paid events, users can seamlessly pay with their wallets, ensuring a secure and quick transaction process.
 
 # Deployed Site
-https://gorgeous-pie-b0e65a.netlify.app/
+https://eventos-d-app.vercel.app/
 
 # Deployed Addresses
 - StableToken: 0x94b38F87880912aa4F46b4A7631315B933f67A2c
