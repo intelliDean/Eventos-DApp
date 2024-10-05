@@ -1,6 +1,6 @@
 import { createConfig, http } from "@wagmi/core";
 import { connectorsForWallets } from "@rainbow-me/rainbowkit";
-import { scrollSepolia } from "@wagmi/core/chains";
+import { arbitrumSepolia } from "@wagmi/core/chains";
 import {
   rainbowWallet,
   metaMaskWallet,
@@ -8,28 +8,26 @@ import {
   walletConnectWallet,
 } from "@rainbow-me/rainbowkit/wallets";
 
-
-
 const connectors = connectorsForWallets(
   [
     {
-      groupName: 'Recommended',
+      groupName: "Recommended",
       wallets: [rainbowWallet, metaMaskWallet],
     },
     {
-      groupName: 'Others',
+      groupName: "Others",
       wallets: [coinbaseWallet, walletConnectWallet],
     },
   ],
-  { appName: 'Eventos', projectId: 'bfa51be0699917189ba7a9429453088e' },
+  { appName: "Eventos", projectId: "bfa51be0699917189ba7a9429453088e" }
 );
 
 export const wagmiConfig = createConfig({
-  chains: [scrollSepolia],
+  chains: [arbitrumSepolia],
   connectors,
   transports: {
-    [scrollSepolia.id]: http(
-      "https://scroll-sepolia.g.alchemy.com/v2/OWk1batiAD_4Hsrf9bFSiFXhzTovXIbd"
+    [arbitrumSepolia.id]: http(
+      "https://arb-sepolia.g.alchemy.com/v2/PP5-km-xd8s0Ui0FrVxyBSEfD_UhS0e9"
     ),
   },
 });

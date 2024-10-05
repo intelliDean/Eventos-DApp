@@ -4,7 +4,7 @@ const ALCHEMY_API_KEY = import.meta.env.ALCHEMY_API_KEY;
 
 const config = {
   apiKey: ALCHEMY_API_KEY,
-  network: Network.SCROLL_SEPOLIA,
+  network: Network.ARB_SEPOLIA,
 };
 const alchemy = new Alchemy(config);
 
